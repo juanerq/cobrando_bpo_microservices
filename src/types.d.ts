@@ -51,9 +51,9 @@ export type ControllerNext = (req: Request, res: Response, next: NextFunction) =
 
 export type ResponseSuccess = (res: Response, msg: any, result: any, status?: number) => void
 
-export type ErrorHanlder = (err: Error, req: Request, res: Response, next: NextFunction) => any
+export type ErrorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => any
 
-export type ErrorHanlderBoom = (err: Boom, req: Request, res: Response, next: NextFunction) => void
+export type ErrorHandlerBoom = (err: Boom, req: Request, res: Response, next: NextFunction) => void
 
 export interface ErrorExpressValidator {
   msg: string
